@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Design Agency</title>
+    <link rel="stylesheet" href="projstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 2rem 0;
+            margin-top: 10px;
+        }
+        .project-header {
+            text-align: center;
+            padding: 3rem 0;
+        }
+        .project-details, .project-conclusion {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .image-slider {
+            text-align: center;
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .slider-container {
+            display: flex;
+            position: relative;
+            width: 100%;
+        }
+
+        .slide {
+            display: none;
+            width: 100%;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .slide img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Buttons */
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(129, 0, 0, 0.6);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+
+        .prev { left: 10px; }
+        .next { right: 10px; }
+
+        .prev:hover, .next:hover {
+            background: rgba(0, 111, 28, 0.8);
+        }
+
+        /* Responsive Fixes */
+        @media (max-width: 768px) {
+            .prev, .next {
+                font-size: 16px;
+                padding: 8px 12px;
+            }
+        }
+         
+        /* Gallery Section */
+        #gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 5px; 
+            margin: 0 auto; 
+            max-width: 1300px;
+        }
+
+        .product-design {
+            margin: 0 auto;
+            text-align: center;
+        }
+        figure {
+            margin: 0 auto; 
+        }
+
+        figure:hover {
+            color: #e76800;
+        }
+
+        figure img {
+            width: 100%;
+            height: auto;
+        }
+
+        figcaption h3 {
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+
+        figcaption p {
+            font-size: 1rem;
+            text-align: left;
+            color: #595959;
+            line-height: 1.4rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="assets/logo.png" alt="Mad Design Agency Logo"> </a>
+             </div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../#projects">Projects</a></li>
+                <li><a href="../#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="project-header">
+            <div class="container">
+                <h1>Prince Tires</h1>
+                <p>Prince Tires is a leading tire company in Calgary, offering a wide range of products to ensure safety and reliability on the road. Their goal is to provide high-quality tires and exceptional customer service for a seamless and smooth driving experience. From the latest tire innovations to trusted favorites, Prince Tires has something for every vehicle.</p>
+            </div>
+        </section>
+
+        <section class="project-details container">
+                <h2>Project Overview</h2>
+                <p> <a class="website" href="https://www.princetires.com">Prince Tires</a>well-established tire retailer in Calgary, offering high-quality products and services. They needed a refreshed brand identity, a more engaging online presence, and marketing assets to enhance customer interaction. My goal was to develop a cohesive visual identity, redesign their website for better usability, and create compelling promotional content to attract and retain customers.</p>
+                
+                <h2>My Responsibilities</h2>
+                <p>As part of the marketing team, I worked on several key areas of this project. My responsibilities included:</p>
+                <ul>
+                    <li>Designed a modern logo with variations and developed brand guidelines to ensure consistency across platforms.</li>
+                    <li>Created a responsive, user-friendly website to streamline navigation and improve the customer experience.</li>
+                    <li>Creating social media content to engage and attract new customers.</li>
+                    <li>shooting content and  captured high-quality images for digital and print marketing.</li>
+                </ul>
+        </section>
+
+        <section class="image-slider">
+            <h2>Visual Identity</h2>
+            <div class="slider-container">
+                <div class="slide"><img src="../assets/princetireslogo.png" alt="Prince Tires main logo"></div>
+                <div class="slide"><img src="../assets/princetirescolors.png" alt="Prince Tires color Palette"></div>
+                <div class="slide"><img src="../assets/logovariations.png" alt="Prince Tires Logo Variation"></div>
+                <div class="slide"><img src="../assets/princetirescolors.png" alt="Color Palette for prince tires"></div>
+                <div class="slide"><img src="../assets/brandguideline.png" alt="do and don't logo variations prince tires"></div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </section>
+
+        <div class="product-design"><h2>Products catogories' Design</h2></div>
+        <!-- Gallery and project showcase -->
+        <section id="gallery">
+            <figure>
+                <img src="../assets/rimsprincetires.png" alt="Prince Tires Product 1"> 
+                <figcaption>
+                    <h4>Prince Tires Rims</h4>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="../assets/allterrainsprincetires.png" alt="Prince Tires Product 2"> 
+                <figcaption>
+                    <h4>Prince Tires All Terrain Tire</h4>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="../assets/wintertires.png" alt="Prince Tires Product 3"> 
+                <figcaption>
+                    <h4>Prince Tires Performance Tire</h4>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="../assets/studded tires.png" alt="Prince Tires Product 4"> 
+                <figcaption>
+                    <h4>Prince Tires Studded tires </h4>
+                </figcaption>
+            </figure>
+        </section>
+
+        <section class="project-details container">
+            <div class="container">
+                <h2>Research & Design Approach
+                </h2>
+                <p>To craft a strong brand identity, I analyzed competitor branding and industry trends, ensuring Prince Tires stood out while maintaining reliability and professionalism. The color palette and typography were chosen to reflect durability and trustworthiness. For the website, usability testing and customer feedback guided the layout, emphasizing ease of navigation and quick access to essential services.  </p>
+            </div>
+              <div class="container">
+                <h2>Final Deliverables</h2>
+                <p>The final deliverables for Prince Tires encompassed a comprehensive branding and digital transformation. A complete brand identity package was developed, including a modernized logo, color palette, and typography to establish a strong and recognizable presence. Additionally, a fully redesigned and responsive website was created to enhance user experience, streamline navigation, and ensure accessibility across all devices. Marketing and promotional assets, such as social media graphics, advertising materials, and print collateral, were also designed to reinforce the brand’s message and engage a wider audience. These deliverables collectively contributed to a cohesive and professional brand image, positioning Prince Tires as a reliable and customer-centric business in the industry.</p>
+            </div>
+        </section>        
+    </main>
+
+    <script>
+        let slideIndex = 0;
+     const slides = document.querySelectorAll(".slide");
+     
+     function showSlide(n) {
+         slides.forEach((slide, i) => {
+             slide.style.display = "none";
+             slide.style.opacity = "0";
+         });
+         slides[n].style.display = "block";
+         setTimeout(() => (slides[n].style.opacity = "1"), 100);
+     }
+     
+     function moveSlide(n) {
+         slideIndex = (slideIndex + n + slides.length) % slides.length;
+         showSlide(slideIndex);
+     }
+     
+     // Enable Arrow Key Navigation
+     document.addEventListener("keydown", (e) => {
+         if (e.key === "ArrowLeft") moveSlide(-1);
+         if (e.key === "ArrowRight") moveSlide(1);
+     });
+     
+     // Initialize
+     document.addEventListener("DOMContentLoaded", () => {
+         showSlide(slideIndex);
+     });
+         </script>
+     </body>
+     </html>
+     
