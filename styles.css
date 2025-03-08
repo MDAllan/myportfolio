@@ -1,0 +1,286 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Quicksand:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+
+h1, h2, h3 {
+    font-family: 'Forum', serif;
+    color: black;
+}
+
+
+main {
+    margin-left: 10px;
+}
+
+/* Header Styling */
+header {
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 80px;
+} 
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+/* Hero Section */
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 50vh;
+    background: white;
+    border-top: 1px solid #a3a3a3;
+    padding: 40px;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero-content p {
+font-size: 20px;
+
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #007b38;;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+/* About Page Styling */
+#about, #journey {
+    padding: 40px;
+    background: #f7f7f7;
+    color: #333;
+}
+.about-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+
+.journey-container {
+    display: flex;
+    max-width: 1200px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto; 
+}
+
+.journey-container p {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    max-width: 1000px;
+    margin: auto 20px;
+}
+    
+.profile-img {
+    width: 250px;
+    height: 330px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-content h1, .journey-container h1 {
+
+    font-size: 2.5rem;
+    margin: 30px;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    margin-bottom: 20px;
+    max-width: 800px;
+    align-items: left;
+    margin-left: 30px;
+}
+
+.creative-interests {
+    font-style: italic;
+    color: #007b38;
+}
+
+/* Skills Section */
+#skills {
+    background-color: white;
+    padding: 40px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 2.3rem;
+    margin-bottom: 30px;
+}
+
+/* Skills Container */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual Skill Items */
+.skill-item {
+    color: #007b38;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: inline-block;
+    border: 2px solid #007b38;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect */
+.skill-item:hover {
+    color: white;
+    background-color: #007b38;
+    transform: scale(1.1);
+}
+
+#connect {
+    margin-left: 30px;
+    .connect
+}
+
+
+/* Gallery Section */
+#gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px; 
+    max-width: 1800px;
+}
+
+figure {
+    padding: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.12); 
+    margin: 0; 
+    margin-left: 10px;
+}
+
+figure:hover {
+    transform: translateY(-5px);
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+figcaption h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+figcaption p {
+    font-size: 1rem;
+    text-align: left;
+    color: #595959;
+    line-height: 1.4rem;
+}
+
+/* Projects Section */
+#projects {
+    padding: 20px;
+    text-align: left;
+    background: white;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.project-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 320px;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 5px;
+    border:1px solid #c7ccc9;
+    height: 300px;   
+}
+
+
+.project-card  :hover {
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #007b38;
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    #gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 758px) {
+    #gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-img {
+        width: 200px;
+        height: 200px;
+    }}
