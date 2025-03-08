@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Design Agency</title>
+    <link rel="stylesheet" href="projstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+
+    
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 2rem 0;
+            margin-top: 15px;
+        }
+        .project-header {
+            text-align: center;
+            padding: 3rem 0;
+        }
+        .project-details, .project-conclusion {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .image-slider {
+    text-align: center;
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(129, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+    background: rgba(0, 111, 28, 0.8);
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .prev, .next {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+}
+     
+
+     
+        
+/* Gallery Section */
+#gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px; 
+    margin: 0 auto; 
+
+    max-width: 1300px;
+}
+
+.product-design {
+margin: 0 auto;
+text-align: center;
+
+}
+figure {
+    margin: 0 auto; 
+}
+
+figure:hover {
+    color: #e76800;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+figcaption p {
+    font-size: 1rem;
+    text-align: left;
+    color: #595959;
+    line-height: 1.4rem;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="../assets/logo.png" alt="Mad Design Agency Logo"> </a>
+             </div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../#projects">Projects</a></li>
+                <li><a href="../#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="project-header">
+            <div class="container">
+                <h1>FitSphere</h1>
+                <p>FitSphere, is a passionate about helping people lead healthier, happier lives. As a proudly Canadian company, they combine personalized diet and fitness plans to create a holistic approach to wellness. their innovative solutions are designed to fit seamlessly into your lifestyle, making health and fitness both accessible and enjoyable. Whether you’re just starting your journey or looking to take your goals to the next level, FitSphere is the way to guide and support you every step of the way.</p>
+            </div>
+        </section>
+
+        <section class="project-details container">
+                <h2>Project Overview</h2>
+                <p> <a class="website" href=https://jrnerio30.github.io/FitSphere>FitSphere</a> is a Canadian-based fitness brand concept developed as part of a school project. The goal was to design a brand that seamlessly integrates tailored fitness programs with diet plans and premium supplements, ensuring a modern and user-friendly experience.</p>
+                
+                <h2>My Responsibilities</h2>
+                <p>As part of a team, I contributed to delivering the final submission by taking ownership of several key design elements. My responsibilities included:</p>
+                <ul>
+                    <li>Creating the brand identity, including the logo, brand guidelines, and logo variations.</li>
+                    <li>Serving as the UI/UX designer, developing the user journey, wireframes, and interactive prototypes.</li>
+                    <li>Conducting user research and collecting feedback to refine the design and ensure a user-friendly interface.</li>
+                    <li>Designing product labels and packaging to align with the brand's aesthetics and values.</li>
+                </ul>
+                
+            </ul>
+        </section>
+
+        <section class="image-slider">
+            <h2>Visual identity</h2>
+            <div class="slider-container">
+                <div class="slide"><img src="../assets/fitspherelogo.png" alt="FitSphere Logo"></div>
+
+                <div class="slide"><img src="../assets/fitspheremoodboard.png" alt="FitSphere Moodboard"></div>
+                <div class="slide"><img src="../assets/logovariation.png" alt="FitSphere Logo Variation"></div>
+                <div class="slide"><img src="../assets/colorspallet.png" alt="Color Palette"></div>
+                <div class="slide"><img src="../assets/wireframes.png" alt="Wireframes"></div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </section>
+
+
+        <div class="product-design"><h2>Product Design</h2></div>
+ <!--gallary and project showcase-->   
+ <section id="gallery">
+    <figure>
+        <img src="../assets/CHOCO Protein bar .png" alt="Sharp & Charp Logo Design and Brand Guidelines"> 
+        <figcaption>
+            <h4>FitSphere Dark Chocolate Protein Bar
+            </h4>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="../assets/protein-bar-white.avif" alt="FitSphere White Chocolate Protein Bar
+        "> <figcaption>
+            <h4>FitSphere White Chocolate Protein Bar
+            </h4> </p></figcaption>
+    </figure>
+    <figure>
+        <img src="../assets/fiber-supplement.avif" alt="FitSphere Gold Standard Protein Powder Jar"> 
+        <figcaption>
+            <h4>FitSphere Gold Standard Protein Powder Jar</h4>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="../assets/protein-powder.avif" alt="FitSphere Gold Standard Protein Powder Jar"> 
+        <figcaption>
+            <h4>FitSphere Gold Standard Protein Powder Jar</h4>
+        </figcaption>
+    </figure><figure>
+        <img src="../assets/mass-gainer.avif" alt="FitSphere Mass Gainer Powder
+        "> 
+        <figcaption>
+            <h4>FitSphere Mass Gainer Powder</h4>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="../assets/IMPACT CREATINE .png" alt="FitSphere IMPACT Creatine Powder
+        "> 
+        <figcaption>
+            <h4>FitSphere IMPACT Creatine Powder
+
+            </h4>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="../assets/SHIFTED PRE_WORKOUT.png" alt="FitSphere SHIFTED Pre-Workout Powder Jar."> 
+        <figcaption>
+            <h4>FitSphere SHIFTED Pre-Workout Powder Jar </h4>   </figcaption>
+    </figure><figure>
+        <img src="../assets/Calcium and Vitamin D.png" alt="Sharp & Charp Logo Design and Brand Guidelines"> 
+        <figcaption>
+            <h4>FitSphere Bone Strength supplements
+            </h4>
+        </figcaption>
+    </figure><figure>
+        <img src="../assets/ELECTROLYTE POWDER.png" alt="Sharp & Charp Logo Design and Brand Guidelines"> 
+        <figcaption>
+            <h4>FitSphere Orange Flavored Electrolyte Powder Supplements
+
+            </h4>
+        </figcaption>
+    </figure>
+    
+    <figure>
+        <img src="../assets/Green Tea Capsules (1).png" alt="Sharp & Charp Logo Design and Brand Guidelines"> 
+        <figcaption>
+            <h4>FitSphere Fat burning Green Tea Capsules</h4>
+        </figcaption>
+    </figure>
+</section>
+
+
+<section class="project-details container">
+    <div class="container">
+        <h2>Research & Design Approach
+        </h2>
+        <p>To create a user-centered fitness brand, I conducted in-depth research on competitor analysis by studying market leaders in the fitness and wellness industry to identify gaps and opportunities, gathered user feedback to understand fitness goals, challenges, and preferences, and developed a modern, vibrant visual identity that communicates motivation, reliability, and inclusivity.</p> </div>
+    <div class="container">
+        <h2>Final Deliverables</h2>
+        <p>FitSphere equips users with personalized health guidance through a well-defined and cohesive digital experience. The final deliverables included a complete brand identity package, featuring a thoughtfully designed logo, color scheme, and typography to create a strong visual identity. Additionally, detailed wireframes and UI concepts were developed to ensure an intuitive and engaging user interface that enhances accessibility and usability. To support brand outreach, a set of marketing and digital assets, including promotional graphics, social media content, and advertising materials, were created to drive user engagement and brand recognition. These deliverables work together to provide a seamless and impactful health and wellness platform.</p>
+    </div>
+</section>
+
+    </main>
+
+    <script>
+   let slideIndex = 0;
+const slides = document.querySelectorAll(".slide");
+
+function showSlide(n) {
+    slides.forEach((slide, i) => {
+        slide.style.display = "none";
+        slide.style.opacity = "0";
+    });
+    slides[n].style.display = "block";
+    setTimeout(() => (slides[n].style.opacity = "1"), 100);
+}
+
+function moveSlide(n) {
+    slideIndex = (slideIndex + n + slides.length) % slides.length;
+    showSlide(slideIndex);
+}
+
+// Enable Arrow Key Navigation
+document.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowLeft") moveSlide(-1);
+    if (e.key === "ArrowRight") moveSlide(1);
+});
+
+// Initialize
+document.addEventListener("DOMContentLoaded", () => {
+    showSlide(slideIndex);
+});
+    </script>
+</body>
+</html>
